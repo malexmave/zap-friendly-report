@@ -790,7 +790,7 @@ $(function (event) {
 				}
 			}
 			else {
-				return false;
+				return data;
 			}
 		},
 		buildBarChart: function (data, container, date) {
@@ -1292,7 +1292,7 @@ $(function (event) {
 							html += '</li>';
 						});
 					}
-					else {
+					else if (site.alerts != "") {
 						// Shortcut variable
 						var item = site.alerts.alertitem;
 
